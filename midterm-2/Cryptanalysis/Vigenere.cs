@@ -9,6 +9,18 @@ public class Vigenere
     private string key;
     public Vigenere(string key)
     {
+        if (key=="")
+        {
+            throw new ArgumentException();
+        }
+
+        foreach (var a in key)
+        {
+            if (Tools.LetterIndex(a)==-1)
+            {
+                throw new ArgumentException();
+            }
+        }
         this.key = key;
         
     }

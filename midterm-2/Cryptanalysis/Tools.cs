@@ -82,7 +82,22 @@ public static class Tools
     
     public static string FilterLetters(string str)
     {
-        throw new NotImplementedException();
+        string res = "";
+        int taille = str.Length;
+
+        for (int i = 0; i < taille; i++)
+        {
+            int a = Tools.LetterIndex(str[i]);
+            if (a!=-1)
+            {
+                res = res + str[i];
+            }
+            
+        }
+
+
+        return res;
+
     }
 
     public static string Extract(string str, int start, int step)

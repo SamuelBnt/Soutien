@@ -9,11 +9,13 @@ internal static class Program
         // Put your tests here.
         
         
-        Vigenere test = new Vigenere("KEY");
-        string a = test.Encrypt("Hello World");
-        Console.WriteLine(a);
-        string b = test.Decrypt(a);
-        Console.WriteLine(b);
+        Console.WriteLine(Tools.FilterLetters("01 A_bc éï #"));
+        
+        
+        
+        
+        
+        
         Test();
     }
 
