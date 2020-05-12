@@ -9,7 +9,19 @@ internal static class Program
         // Put your tests here.
         
         
-        Console.WriteLine(Tools.FilterLetters("01 A_bc éï #"));
+        Console.WriteLine(Vigenere.GuessKeyWithLength(@":Verbmariayrqswroepogcfsgbilcmreersslniayraevporaoy
+lovcmskzilcigxhsokpkgckwccgyzeasxcceayrryypxipyycxjpomlnvcviqbieviqtypshgayc
+csswspkpcctpsrastcchcfmcorqyggoxcbievikorrkxgyrayrtorrsslcsskxpyytovsxqmiilp
+easpcniqowmbxgbhsxiqsxskxgyrbowyqvckfjotybhccqmiilcqyvlmxrcdiqMirdibojgxmrss
+lvepqiayqnbilnrcmiqcegbikorrviqkgrowbogmbvszxgyrbogmzmlkkcnilotmdmqwicdxmexc
+cmreersslnelcpyaycvpcniqsrbszgnyqyrrvenbidovcxgcorsdmjswyxxbowabmrovccmlktnb
+snbmccPccvcqpccilpvcsrrownoytorroxpoivzpgmmrowmetpyzcxmpnylmsbohcmslnygdilyr
+cmvgdfyciqevjkqmbejsxcvirrmoeimepymssdykoPgnildmdsgydmmxhcverbmaripsiccxsxtp
+ygccwsctmdildmcvpcwildwslncmxgpPydvgmlcbmczisdjysvcctcmmdsusoqcxxpojcbilmiyv
+mlpmbopgdiSxinovqyrlogmxrsotmevyfsgbxpsgfoiqduskpgpmcohcdvgmlcevSxinovqyrloh
+cmvgdiayqkoyldvgmlcevloxpsgfotycrcmiqcegbikorrdssdpcdikzwkkmqcipotmcinvyryxq
+evsxirkgrsusoxpyqnoyqoeszsgxxborymusovgbpybinexydmmx
+",3));
         
         
         

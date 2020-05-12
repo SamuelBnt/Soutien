@@ -87,7 +87,38 @@ public class Vigenere
 
     public static string GuessKeyWithLength(string cypherText, int keyLength)
     {
-        throw new NotImplementedException();
+        string texte = Tools.FilterLetters(cypherText);
+        string[] res = new string[keyLength];
+        for (int i = 0; i < keyLength; i++)
+        {
+            res[i] = Tools.Extract(texte, i, keyLength);
+        }
+
+        string res1 = "";
+        foreach (var a in res)
+        {
+            int[] histo = Tools.Histogram(a);
+            int taille = histo.Length;
+            int maxi = 0;
+            for (int i = 0; i < taille; i++)
+            {
+                if (histo[maxi]<histo[i])
+                {
+                    maxi = i;
+                    
+                }
+            }
+            
+            int rese = maxi -4;
+            rese = Tools.Modulus(rese, 26);
+            rese = rese + 97;
+            char c = (char) rese;
+            
+            res1 = res1 + c;
+
+        }
+        
+        return res1;
     }
     
     public static float IndexOfCoincidence(string str)
