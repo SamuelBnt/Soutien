@@ -12,6 +12,8 @@ internal static class Program
         Vigenere test = new Vigenere("KEY");
         string a = test.Encrypt("Hello World");
         Console.WriteLine(a);
+        string b = test.Decrypt(a);
+        Console.WriteLine(b);
         Test();
     }
 
