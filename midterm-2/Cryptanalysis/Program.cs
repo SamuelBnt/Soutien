@@ -7,7 +7,14 @@ internal static class Program
     private static void Main()
     {
         // Put your tests here.
-        Tools.Histogram("azefzef");
+        Console.WriteLine(Caesar.GuessKey("zzzzzzzzzzzzz"));
+        
+        Caesar simple = new Caesar(3);
+        string a = simple.Encrypt("My exam is so interesting! Thanks ACDC <3");
+        Console.WriteLine(a);
+        string b = simple.Decrypt("Pb hadp lv vr lqwhuhvwlqj! Wkdqnv DFGF <3");
+        Console.WriteLine(b);
+        
         Test();
     }
 

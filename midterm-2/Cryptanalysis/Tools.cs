@@ -66,7 +66,7 @@ public static class Tools
     public static int[] Histogram(string str)
     {
         int[] histo = new int[26];
-        Console.WriteLine(histo[25]);
+        
 
         foreach (var a in str)
         {
@@ -76,7 +76,7 @@ public static class Tools
                 histo[w] = histo[w] + 1;
             }
         }
-
+        
         return histo;
     }
     
